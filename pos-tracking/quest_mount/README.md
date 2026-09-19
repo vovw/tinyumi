@@ -45,9 +45,11 @@ camera, marker-ball calibration and ball stalk from portable collection. Keep
 the YAM wrist camera and aperture markers: a controller measures its own pose,
 not the opening of the mechanical jaws. The wrist camera USB cable remains.
 
-The current repo reports 0.46 mm RMS within settled holds, not moving TCP
+At the time of this concept study, the repo reported 0.46 mm RMS within settled holds, not moving TCP
 accuracy, and unresolved 14% scale / 9 degree direction discrepancies against
-robot FK. Quest is not a demonstrated accuracy upgrade. Its benefit is likely
+robot FK. The subsequently merged [upstream dynamic-accuracy report](../dynamic-accuracy.md)
+updates those baseline limitations; it does not validate this Quest concept.
+Quest is not a demonstrated accuracy upgrade. Its benefit is likely
 collection convenience; dynamic accuracy, occlusion, drift and reacquisition
 need an apples-to-apples comparison. The tracker solver itself was not found in
 this checkout, so this comparison uses its hardware and published measurements.

@@ -2,8 +2,11 @@
 
 ## 2026-09-19 — initial tinyumi fork
 
-Based on Yosub Shin’s YAM-UMI at `2862fe2`; original history and MIT notice retained.
+Started from Yosub Shin’s YAM-UMI at `2862fe2`; merged upstream through
+`9d202bc` before publication. Original history and MIT notice retained.
 
+- Incorporated newer upstream camera/shutter guidance and dynamic tracking
+  documentation, preserved in `DESIGN.md` and `pos-tracking/`.
 - Adopted the **tinyumi** name and rewrote the entrypoint around the current
   build. Preserved original rationale and reported measurements in `DESIGN.md`.
 - Added HandUMI-derived left/right controller supports with shortened angled

@@ -6,7 +6,7 @@ lists what was used and the license it was used under.
 ## YAM-UMI — original gripper design
 
 tinyumi is a derivative of [YosubShin/yam-umi](https://github.com/YosubShin/yam-umi),
-based on commit `2862fe2`. The original MIT license and Yosub Shin copyright
+started from commit `2862fe2` and merged through `9d202bc`. The original MIT license and Yosub Shin copyright
 notice are retained in [LICENSE](LICENSE). See [CHANGELOG.md](CHANGELOG.md)
 for this fork’s additions. Historical design notes and measurements are
 preserved in [DESIGN.md](DESIGN.md).
