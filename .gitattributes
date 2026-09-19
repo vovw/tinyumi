@@ -1,0 +1,3 @@
+# Preserve CAD exporter formatting and unmodified upstream STEP sources.
+*.step -whitespace
+*.stp -whitespace

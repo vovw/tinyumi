@@ -3,6 +3,34 @@
 This project incorporates or derives from third-party material. Each item below
 lists what was used and the license it was used under.
 
+## YAM-UMI — original gripper design
+
+tinyumi is a derivative of [YosubShin/yam-umi](https://github.com/YosubShin/yam-umi),
+based on commit `2862fe2`. The original MIT license and Yosub Shin copyright
+notice are retained in [LICENSE](LICENSE). See [CHANGELOG.md](CHANGELOG.md)
+for this fork’s additions. Historical design notes and measurements are
+preserved in [DESIGN.md](DESIGN.md).
+
+## I2RT — reference meshes and prototype fingertips
+
+`hardware/reference/i2rt_linear_4310/` includes pinned upstream tip meshes,
+model XML and MIT license. [source.json](hardware/reference/i2rt_linear_4310/source.json)
+records the source commit, paths and hashes. The print prototypes in
+`bambu/full_rebuild/tip_*_prototype.stl` trim those meshes to remove the stock
+rack; assembly illustrations also derive from these meshes. This is an
+additional use beyond the original camera interface described below.
+
+## HandUMI — optional controller supports
+
+`pos-tracking/quest_mount/handumi_v1/` contains original and modified controller
+support CAD from [murobotics-ai/handumi-hw](https://github.com/murobotics-ai/handumi-hw),
+commit `fc7462ad1ed58c0c8538f6c7dbb732211d088ca8`, under Apache-2.0.
+The upstream licence is included in that folder's `source/LICENSE`.
+The modified supports retain the controller rings and replace the mounting ends
+to attach to tinyumi. See the folder README for source paths and modification
+details. These optional supports are an exception to the original-work statement
+about `pos-tracking/` below.
+
 ## I2RT Robotics — YAM robot models and CAD
 
 This design is dimensioned from three sets of files published by I2RT Robotics
@@ -16,8 +44,7 @@ Together these are what make the gripper geometry and the wrist camera pose matc
 the deployed robot.
 
 **Scope of what is derived.** I2RT's plate CAD is supplied as a single merged
-mesh, so it provides overall form but no separable components. Everything in this
-repository that is not the camera mount interface or the cable retainer was drawn
+mesh, so it provides overall form but no separable components. In the original YAM-UMI release, the gripper mechanism was drawn
 from scratch — `plate_v6`, `adapter_v10`, `L_bracket_v3`, `handle_v13`, the pinion
 variants, and all of `pos-tracking/` are original work, dimensioned either
 independently or by measuring the physical robot. The derived content is the
@@ -71,8 +98,9 @@ notice in the [README](README.md#license-and-attribution).
 
 ## HandUMI (Murobotics)
 
-No CAD from [`murobotics-ai/handumi-hw`](https://github.com/murobotics-ai/handumi-hw)
-is used in this repository. HandUMI was the direct starting point for this work
+The original YAM-UMI gripper mechanism did not use HandUMI CAD. The optional
+controller supports added in this fork do, as documented above. HandUMI was
+the direct starting point for the original work
 and is credited as prior art. The design ideas adopted here are the hand-worn,
 glove-style form factor, retaining the operator's fingers with hook-and-loop
 straps, and keeping the two jaws mechanically synchronized — implemented

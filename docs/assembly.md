@@ -1,160 +1,94 @@
-# Assembly
+# tinyumi assembly
 
-> **This document is a skeleton.** The build order below is inferred from the
-> geometry, not transcribed from a real build. Correct it against the assembled
-> prototype before publishing, and add a photo per step.
+This guide follows the CAD assembly. The new mounts, stops and printed tips
+still need physical fit verification. Use the [fastener table](fasteners.md)
+for screw sizes, quantities and confidence; it supersedes the original blanket
+advice to pick unspecified screws from an assortment.
 
-## Before you start
+## 1. Choose and print parts
 
-- Print everything in [`hardware/STL/`](../hardware/STL/). See
-  [Printing](../README.md#printing).
-- **Install the M3 heat-set inserts first**, while the parts are still bare and
-  reachable with a soldering iron. Doing this after assembly is much harder, and a
-  misaligned insert usually means reprinting the part.
+Use one of the [two-plate projects](../bambu/full_rebuild/README.md), selecting
+D405 or original fisheye camera. These contain the combined Quest/rail-stop base,
+two adapters with integral racks, two L-brackets, two finger holders, four
+pinion fit variants, four stops and two prototype tips. Install only one pinion.
+The [Quest support](../pos-tracking/quest_mount/handumi_v1/README.md) is separate:
+print the appropriate left or right support if needed. Original YAM Linear 4310
+tips may replace the rigid prototypes.
 
-  Threads are brass **M3 × 5 mm × ⌀4 mm** inserts melted in with a soldering iron
-  insert tip — not tapped plastic, not captive nuts. Insert dimensions vary
-  between sellers at the same thread size, so check yours against the seat
-  diameter in the STEP file before printing a full set.
-- Print the marker sheets at 100% scale. See
-  [`pos-tracking/README.md`](../pos-tracking/README.md).
-- Have the spare YAM gripper tips on hand.
+## 2. Install inserts
 
-## 1. Rails and carriages
+Install M3 inserts in the locations listed in the [insert table](fasteners.md#heat-set-insert-locations)
+while parts are separate. Keep them square and allow them to cool.
+The axle insert belongs in the **base**, not in the pinion’s bearing recess.
+The larger tip and holder holes are clearance holes, not M3 insert pockets.
 
-Mount **two** MGN9 100 mm rails to `plate_v6`, one per jaw, and slide a MGN9C
-carriage onto each. This is the same rail arrangement the YAM gripper uses
-internally, which is what makes the jaw travel match the robot's.
+## 3. Rails and end stops
 
-Check that both carriages travel freely over the full stroke before anything else
-goes on. Rail parallelism is set here, and a bind introduced at this step is
-felt by the operator as friction on every pinch — which is exactly what the
-servo-free design exists to avoid.
+Mount two 100 mm MGN9 rails with one MGN9C carriage each. Align them so each
+carriage travels freely. Keep carriages restrained until stops are installed.
+Use the [four printed stops](../hardware/rail_stops/README.md), two A and two B
+on matching diagonals, with M3 × 8 countersunk screws in the combined base’s
+side-facing inserts. The original unmodified base cannot accept these stops.
+Gently verify that each carriage contacts its stop before leaving the rail;
+clone carriage dimensions may differ. If retaining original rubber caps instead,
+trim only enough to clear the adapters while still retaining the carriages.
 
-**Keep the rubber end caps, and trim them.** The rails ship with rubber caps at
-each end. Left as they are, they foul the jaw adapter riding above the carriage;
-removed entirely, nothing stops a carriage running off the end of the rail and
-shedding its ball bearings. Cut a few millimetres off the top of each cap
-instead: the adapter then passes over freely, while the remaining stub still
-catches the carriage before it derails.
+## 4. Adapters and pinion
 
-## 2. Pinion
+Bolt one adapter to each carriage, with both integral racks facing the central
+pinion. Stack two MR63ZZ bearings (3 × 6 × 2.5 mm each) in the pinion. Mount the
+axle through the bearings into the base insert. Check the complete head/bearing
+stack: the screw must retain the axle without clamping the rotating gear.
 
-Stack the two 3 × 6 × 2.5 mm bearings, then mount the pinion on an **M3 screw**
-through them so it meshes with the racks on both moving jaws.
+Trial-fit the four pinion variants and use the smoothest one. Moving either jaw
+should move the other symmetrically without binding, tooth skipping or excessive
+wobble. Verify axle retention as well as free rotation.
 
-**Do not tighten the screw down.** Run it in only far enough to locate the pinion,
-leaving it free to spin. Torquing it clamps the screw head against the top face of
-the pinion, and that contact adds exactly the kind of friction the servo-free
-design exists to eliminate. Snug, not tight: the pinion should spin under a
-fingertip once the screw is set. The pinion is what makes the two jaws move
-symmetrically from a single-handed pinch.
+## 5. L-brackets, finger holders and tips
 
-**The pinion's heat-set inserts must go in perpendicular to the face.** This is
-the one insert on the build where a degree or two of tilt is not cosmetic: it
-cants the pinion off its rotation axis, so the gear meshes deeper into one rack
-than the other. The result is an asymmetric aperture and friction that varies
-through the stroke — the exact defect this mechanism exists to avoid. Seat these
-inserts with the iron held square to the face, and check the pinion spins true
-before going further.
+Attach each L-bracket to its adapter using the two outer mounting positions.
+Attach each curved finger holder at its smaller centre mounting hole. Trial-fit
+the tips and holder together before final tightening: one lower joint is shared.
+There are two tip screws per side. **M4 × 12 is only a suggested trial size**;
+confirm the receiving thread and both clamped stacks as explained in the
+[fingertip guidance](fasteners.md#fingertip-joint-measure-before-tightening).
 
-**Choosing a pinion.** Four variants are provided (`v0`–`v3`), differing only in
-outside diameter in 0.1 mm steps. Print all four, then fit each in turn: place the
-pinion between the two racks and slide the racks into their final assembly
-position. Keep whichever runs smoothest. `v3` was the best fit in the reference
-build, but the right one depends on your printer and filament, so choose it by
-feel rather than by trusting this number.
+Thread one hook-and-loop strap through each holder, two straps per gripper.
+Check hand clearance through the entire jaw stroke.
 
-<!-- TODO: where do the racks live — integral to the adapters, integral to the
-     plate, or separate parts? -->
+## 6. Camera
 
-## 3. Jaw adapters and gripper tips
+For D405, follow the [mount guide](../hardware/realsense_d405/README.md): two
+M3 × 8 socket-head screws through the rear pad, and two M3 × 8 countersunk screws
+into the base. Camera screw entry must not exceed 4 mm. Test the supplied fit
+gauge first. Check the actual cable plug and bend clearance.
 
-Bolt `adapter_v10` to each carriage. Install the YAM "Linear 4310" gripper tips
-into the adapters.
+For the original fisheye, use its camera mount on the base’s camera-side
+underside interface. The jaw L-brackets belong on the adapters, not at this
+camera joint. Set and lock the lens focus before calibrating intrinsics.
 
-Screws are not called out by size anywhere in this build. Work from an M3/M4
-assortment kit and pick the shortest screw that fully engages its insert — the
-printed parts are drawn for M3 × 5 mm inserts, so an over-long screw bottoms out
-against the insert rather than clamping the joint.
+The D405 mount has a new pose. Calibrate the selected camera and its transform
+to the gripper; do not reuse fisheye calibration for D405.
 
-<!-- TODO: if a size chart would help, record what you actually used per joint. -->
+## 7. Markers and pose source
 
-## 4. Aperture markers
+Print [tip markers](../pos-tracking/markers/tip_markers_9mm_ID13_14.pdf) at 100%
+scale, one 9 mm marker per tip. Seat them flat with full-face tape and verify
+visibility across the aperture. The original fisheye placement was 25 mm from
+the gripper base; check visibility again with D405.
 
-Apply the 9 mm tip markers (`pos-tracking/markers/tip_markers_9mm_ID13_14.pdf`,
-IDs 13 and 14 — one per tip) to the gripper tips, one on each jaw.
+If using Quest, attach the support with two M3 × 10 countersunk screws in the
+revised underside pad. Verify real controller fit, retention, tracking surfaces,
+buttons and hand clearance. Calibrate controller-to-tool pose and synchronize
+pose with camera data; this repository does not supply a completed Quest capture
+pipeline. The [marker-ball tracker](../pos-tracking/README.md) remains an
+alternative with its own assembly and calibration procedure.
 
-**Position each marker 25 mm from the gripper base** — as far from the fisheye
-camera as the tip's flat area allows.
+## 8. Final fit check
 
-Two unrelated constraints bound this, and only one of them is optical. The camera
-sits above the gripper looking down at an angle, so moving a marker *away* from it
-carries the marker up toward the centre of the frame. Farther is therefore
-optically better, all the way:
-
-- **Too close to the camera** and the marker falls toward the edge of the
-  fisheye's field of view, where distortion is worst and corner detection
-  degrades — closer still and it leaves the frame altogether.
-- **Too far** and you run out of somewhere to put it. The tip narrows toward its
-  end, so past a point there is no flat patch wide enough to hold the marker
-  without it bending or folding over an edge — and a marker that is not flat will
-  not solve cleanly.
-
-25 mm is where the flat area runs out on these tips, not an optical compromise. On
-different tips, find the farthest point that still seats the marker flat.
-
-Use double-sided tape across the whole face, not just at the edges, so they cannot
-curl.
-
-Check marker visibility across the full open-to-closed range before committing to
-a build. Markers visible when open but clipped when closed lose exactly the frames
-where grasp detail matters most.
-
-<!-- TODO: note which ID you put on which jaw. Width estimation only needs the
-     separation, but a consistent left/right convention keeps downstream code from
-     having to guess handedness. -->
-
-## 5. Camera mount
-
-Attach `L_bracket_v3` and `YAM_linear_gripper_fisheye_camera_mount` to the plate,
-then mount the Arducam module.
-
-**Set the focus, then leave it alone.** The wrist fisheye focuses mechanically —
-you turn the lens barrel by hand; there is no autofocus and nothing to set in
-software. Focus it at the working distance where the gripper tips and the
-manipulated object sit, checking that the 9 mm tip markers resolve cleanly at both
-open and closed aperture, then lock the lens with its retaining ring so handling
-cannot shift it.
-
-Do this **before** calibrating the camera intrinsics. Turning the barrel changes
-the effective focal length, so a focus adjustment made after calibration
-invalidates it — and a stale intrinsic quietly corrupts both the aperture
-estimate and any SLAM pose derived from this camera.
-
-**Verify the extrinsic.** This is the claim the whole design rests on. With the
-camera mounted, confirm the camera-to-tip transform matches the one on the
-deployed YAM arm — ideally by capturing the same scene from both and comparing,
-not just by trusting the mount geometry.
-
-## 6. Handle and straps
-
-Attach `handle_v13`, then thread **one hook-and-loop strap per finger — two per
-gripper**, one for the thumb and one for the index/middle finger.
-
-Each finger position has two strap holes, but a single strap through one pair was
-enough to retain the finger in the reference build. The second hole is there if
-you want to shift the strap's position for a different hand size, or run two
-straps per finger for a firmer hold.
-
-## 7. Wrist tracker (optional)
-
-If using marker-based pose tracking rather than SLAM, assemble the dodecahedral
-tracker: `stalk_rod_80mm` into `wrist_stalk_adapter_v3`, `dodeca_marker_ball_v2`
-on the stalk, retained by `retainer_radial_tab`.
-
-Apply the 15 mm markers to the twelve faces **in any arrangement**. The
-face-to-ID mapping is recovered by calibration afterwards rather than prescribed,
-so there is no layout to match — but the calibration output is specific to the
-ball you built and has to be kept with it. See
-[`pos-tracking/README.md`](../pos-tracking/README.md).
+Confirm inserts do not rotate, joints clamp before screws bottom, rails remain
+parallel, stops retain both carriages, and the axle is retained while the pinion
+spins freely. Sweep the jaws with straps, camera cable and optional controller
+in place. Check fingertip fastening, marker visibility and camera view before
+using the gripper to collect data. Record measured screw lengths and any fit
+changes for the next revision.

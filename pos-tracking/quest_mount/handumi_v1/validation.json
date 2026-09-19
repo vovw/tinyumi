@@ -1,0 +1,128 @@
+{
+  "status": "fit_prototype",
+  "source_commit": "fc7462ad1ed58c0c8538f6c7dbb732211d088ca8",
+  "parameters_mm": {
+    "bolt_pitch": 16.0,
+    "hole_y": -28.0,
+    "boss_width": 30.0,
+    "boss_depth": 12.0,
+    "boss_height": 4.0,
+    "insert_bore": 4.0,
+    "insert_depth": 5.4,
+    "tab_thickness": 5.0,
+    "ring_tilt_degrees": 45.0
+  },
+  "plate": {
+    "cad_valid": true,
+    "watertight": true,
+    "top_above_z2_unchanged": true
+  },
+  "supports": {
+    "right": {
+      "cad_valid": true,
+      "solid_count": 1,
+      "stl_watertight": true,
+      "volume_mm3": 14228.1325439093,
+      "bounds_mm": [
+        [
+          -26.297767639160156,
+          -78.55661010742188,
+          -60.556610107421875
+        ],
+        [
+          20.65196418762207,
+          -22.0,
+          -4.0
+        ]
+      ],
+      "plate_intersection_mm3": 0.0,
+      "conservative_assembly_aabb_candidates": [],
+      "separation_mm_by_component": {
+        "rail_1": 10.0,
+        "rail_2": 40.0,
+        "carriage_1": 14.0,
+        "carriage_2": 34.5,
+        "adapter_1": 30.34,
+        "adapter_2": 14.4,
+        "pinion": 14.4,
+        "finger_bracket_1": 25.0,
+        "finger_bracket_2": 25.0,
+        "finger_holder_1": 10.02,
+        "finger_holder_2": 1.98,
+        "official_yam_tip_1": 34.11,
+        "official_yam_tip_2": 34.11,
+        "fisheye_camera_mount": 46.0,
+        "camera_pcb_schematic": 88.602,
+        "camera_lens_schematic": 88.924,
+        "camera_glass_schematic": 90.356,
+        "tip_screw_1_-17.0984208482": 34.102,
+        "tip_screw_1_3.9015791518": 34.102,
+        "tip_screw_-1_-17.0984208482": 34.102,
+        "tip_screw_-1_3.9015791518": 34.102
+      },
+      "retained_upstream_volume_mm3": 11581.654200574203,
+      "upstream_volume_mm3": 15420.83792696864,
+      "ring_trim_local_y_mm": 9.0,
+      "controller_fit": "upstream contour retained; Touch Plus fit not physically verified"
+    },
+    "left": {
+      "cad_valid": true,
+      "solid_count": 1,
+      "stl_watertight": true,
+      "volume_mm3": 26882.608037771202,
+      "bounds_mm": [
+        [
+          -26.823772430419922,
+          -81.49066162109375,
+          -63.491363525390625
+        ],
+        [
+          22.41373634338379,
+          -22.0,
+          -4.0
+        ]
+      ],
+      "plate_intersection_mm3": 0.0,
+      "conservative_assembly_aabb_candidates": [],
+      "separation_mm_by_component": {
+        "rail_1": 10.0,
+        "rail_2": 40.0,
+        "carriage_1": 14.0,
+        "carriage_2": 34.5,
+        "adapter_1": 30.34,
+        "adapter_2": 14.4,
+        "pinion": 14.4,
+        "finger_bracket_1": 25.0,
+        "finger_bracket_2": 25.0,
+        "finger_holder_1": 10.02,
+        "finger_holder_2": 1.98,
+        "official_yam_tip_1": 34.11,
+        "official_yam_tip_2": 34.11,
+        "fisheye_camera_mount": 46.0,
+        "camera_pcb_schematic": 88.602,
+        "camera_lens_schematic": 88.924,
+        "camera_glass_schematic": 90.356,
+        "tip_screw_1_-17.0984208482": 34.102,
+        "tip_screw_1_3.9015791518": 34.102,
+        "tip_screw_-1_-17.0984208482": 34.102,
+        "tip_screw_-1_3.9015791518": 34.102
+      },
+      "retained_upstream_volume_mm3": 24287.383239654235,
+      "upstream_volume_mm3": 26747.166766123133,
+      "ring_trim_local_y_mm": 9.5,
+      "controller_fit": "upstream contour retained; Touch Plus fit not physically verified"
+    }
+  },
+  "unverified": [
+    "actual Touch Plus fit in upstream rings",
+    "controller body/head clearance",
+    "human hand and wrist clearance",
+    "tracking visibility",
+    "screw and insert fit",
+    "loaded stiffness"
+  ],
+  "source_sha256": {
+    "left_controller_support.step": "e95a392d6dc4193935ca61627bd4fa02816412d5ec2d09d2cc184201c1a47a5e",
+    "right_controller_support.step": "aa1ace5c84b8cc401efd8e40b691395f23a79131cc4db8ec61232ee0ff7c5376"
+  }
+}

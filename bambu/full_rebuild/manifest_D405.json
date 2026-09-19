@@ -1,0 +1,272 @@
+[
+  {
+    "name": "Updated base - Quest and stops",
+    "source": "hardware/rail_stops/plate_v6_quest_and_rail_stops.stl",
+    "plate": 1,
+    "xy": [
+      76.0,
+      12.0
+    ],
+    "size": [
+      102.0,
+      65.0,
+      14.399999618530273
+    ],
+    "watertight": true
+  },
+  {
+    "name": "Jaw adapter 1",
+    "source": "hardware/STL/adapter_v10.stl",
+    "plate": 1,
+    "xy": [
+      12.0,
+      173.0
+    ],
+    "size": [
+      50.0,
+      25.880000114440918,
+      10.599999904632568
+    ],
+    "watertight": true
+  },
+  {
+    "name": "Finger holder 1",
+    "source": "hardware/STL/handle_v13.stl",
+    "plate": 1,
+    "xy": [
+      188.0,
+      12.0
+    ],
+    "size": [
+      32.0,
+      55.0,
+      17.000000000000004
+    ],
+    "watertight": true
+  },
+  {
+    "name": "L bracket 1",
+    "source": "hardware/STL/L_bracket_v3.stl",
+    "plate": 1,
+    "xy": [
+      54.0,
+      108.0
+    ],
+    "size": [
+      71.57079696655273,
+      46.5,
+      9.09999990463257
+    ],
+    "watertight": true
+  },
+  {
+    "name": "Jaw adapter 2",
+    "source": "hardware/STL/adapter_v10.stl",
+    "plate": 1,
+    "xy": [
+      72.0,
+      173.0
+    ],
+    "size": [
+      50.0,
+      25.880000114440918,
+      10.599999904632568
+    ],
+    "watertight": true
+  },
+  {
+    "name": "Finger holder 2",
+    "source": "hardware/STL/handle_v13.stl",
+    "plate": 1,
+    "xy": [
+      12.0,
+      108.0
+    ],
+    "size": [
+      32.0,
+      55.0,
+      17.000000000000004
+    ],
+    "watertight": true
+  },
+  {
+    "name": "L bracket 2",
+    "source": "hardware/STL/L_bracket_v3.stl",
+    "plate": 1,
+    "xy": [
+      135.57079696655273,
+      108.0
+    ],
+    "size": [
+      71.57079696655273,
+      46.5,
+      9.09999990463257
+    ],
+    "watertight": true
+  },
+  {
+    "name": "Pinion v0 - fit test",
+    "source": "hardware/STL/pinion_z18_deep_v0.stl",
+    "plate": 1,
+    "xy": [
+      132.0,
+      173.0
+    ],
+    "size": [
+      19.999534606933594,
+      19.78845977783203,
+      10.600000381469727
+    ],
+    "watertight": true
+  },
+  {
+    "name": "Pinion v1 - fit test",
+    "source": "hardware/STL/pinion_z18_deep_v1.stl",
+    "plate": 1,
+    "xy": [
+      161.9995346069336,
+      173.0
+    ],
+    "size": [
+      19.8995361328125,
+      19.681257247924805,
+      10.600000381469727
+    ],
+    "watertight": true
+  },
+  {
+    "name": "Pinion v2 - fit test",
+    "source": "hardware/STL/pinion_z18_deep_v2.stl",
+    "plate": 1,
+    "xy": [
+      191.8990707397461,
+      173.0
+    ],
+    "size": [
+      19.799535751342773,
+      19.574054718017578,
+      10.600000381469727
+    ],
+    "watertight": true
+  },
+  {
+    "name": "Pinion v3 - fit test",
+    "source": "hardware/STL/pinion_z18_deep_v3.stl",
+    "plate": 1,
+    "xy": [
+      221.69860649108887,
+      173.0
+    ],
+    "size": [
+      19.699535369873047,
+      19.46672821044922,
+      10.600000381469727
+    ],
+    "watertight": true
+  },
+  {
+    "name": "RealSense D405 camera mount",
+    "source": "hardware/realsense_d405/d405_mount_print.stl",
+    "plate": 1,
+    "xy": [
+      12.0,
+      12.0
+    ],
+    "size": [
+      54.0,
+      86.0,
+      30.65685462951658
+    ],
+    "watertight": true
+  },
+  {
+    "name": "Rail stop A1",
+    "source": "hardware/rail_stops/rail_stop_A_print_2.stl",
+    "plate": 1,
+    "xy": [
+      12.0,
+      208.88000011444092
+    ],
+    "size": [
+      11.0,
+      11.0,
+      4.5
+    ],
+    "watertight": true
+  },
+  {
+    "name": "Rail stop A2",
+    "source": "hardware/rail_stops/rail_stop_A_print_2.stl",
+    "plate": 1,
+    "xy": [
+      33.0,
+      208.88000011444092
+    ],
+    "size": [
+      11.0,
+      11.0,
+      4.5
+    ],
+    "watertight": true
+  },
+  {
+    "name": "Rail stop B1",
+    "source": "hardware/rail_stops/rail_stop_B_print_2.stl",
+    "plate": 1,
+    "xy": [
+      54.0,
+      208.88000011444092
+    ],
+    "size": [
+      11.0,
+      11.0,
+      4.5
+    ],
+    "watertight": true
+  },
+  {
+    "name": "Rail stop B2",
+    "source": "hardware/rail_stops/rail_stop_B_print_2.stl",
+    "plate": 1,
+    "xy": [
+      75.0,
+      208.88000011444092
+    ],
+    "size": [
+      11.0,
+      11.0,
+      4.5
+    ],
+    "watertight": true
+  },
+  {
+    "name": "Left fingertip - PROTOTYPE",
+    "source": "bambu/full_rebuild/tip_left_prototype.stl",
+    "plate": 2,
+    "xy": [
+      319.2,
+      12.0
+    ],
+    "size": [
+      68.0,
+      74.33259582519531,
+      23.742425918579098
+    ],
+    "watertight": true
+  },
+  {
+    "name": "Right fingertip - PROTOTYPE",
+    "source": "bambu/full_rebuild/tip_right_prototype.stl",
+    "plate": 2,
+    "xy": [
+      397.2,
+      12.0
+    ],
+    "size": [
+      68.0,
+      74.33259582519531,
+      23.742401123046875
+    ],
+    "watertight": true
+  }
+]

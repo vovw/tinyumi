@@ -1,0 +1,10 @@
+{
+  "url": "https://realsenseai.com/wp-content/uploads/2025/09/Intel-RealSense-D400-Series-Datasheet-October-2025.pdf",
+  "figure": "10-13",
+  "printed_page": 146,
+  "body_mm": [42,42,23],
+  "rear_mount_threads": "2x M3x0.5",
+  "rear_mount_pitch_mm": 20,
+  "rear_mount_max_insertion_mm": 4,
+  "note": "Drawing visually checked; envelope omits connector-side protrusion. Bracket leaves camera sides open."
+}

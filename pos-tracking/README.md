@@ -1,7 +1,11 @@
 # Position tracking
 
+An alternative [HandUMI controller support adapted for tinyumi](quest_mount/handumi_v1/README.md)
+includes left/right CAD, a revised plate and an assembly preview. This is a fit
+prototype: real controller fit, hand clearance and tracking need physical checks.
+
 **This is an optional add-on.** The default way to recover wrist pose with
-YAM-UMI is camera SLAM from the wrist fisheye, the same approach the original UMI
+tinyumi is camera SLAM from the wrist fisheye, the same approach the original UMI
 used — it needs nothing from this directory and keeps collection portable.
 
 What is here is a **dodecahedral ArUco marker ball** on a stalk, observed by an
@@ -11,7 +15,7 @@ confining collection to that camera's view. Markers use the **`DICT_4X4_50`**
 dictionary.
 
 <p align="center">
-  <img src="../media/assembly-with-tracker.jpg" alt="The assembled YAM-UMI gripper with the dodecahedral ArUco marker ball mounted on its wrist stalk" width="560">
+  <img src="../media/assembly-with-tracker.jpg" alt="The assembled tinyumi gripper with the dodecahedral ArUco marker ball mounted on its wrist stalk" width="560">
 </p>
 <p align="center"><em>The assembled gripper with the dodecahedral tracker on its
 stalk, held clear of the hand and of the fisheye camera's view.</em></p>

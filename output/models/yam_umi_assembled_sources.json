@@ -1,0 +1,30 @@
+{
+  "source_commit": "5b72c47239bd056d0fa6c1a39edeb0537c89443c",
+  "source_repository": "https://github.com/i2rt-robotics/i2rt",
+  "tip_source_files": [
+    "i2rt/robot_models/gripper/linear_4310/assets/tip_left.stl",
+    "i2rt/robot_models/gripper/linear_4310/assets/tip_right.stl"
+  ],
+  "tip_processing": "Scale metres to millimetres; retain z <= -145.61 mm to isolate jaw from merged stock rack. 0.01 mm inset avoids coplanar mesh slivers. For illustration only.",
+  "mounting": "21 mm tip pair aligned to outer short-arm bracket holes; 40 mm bracket pair aligned to adapters; 10.5 mm centre/lower pair aligned to handles. Camera 40 mm pair aligned centrally to 40.57 mm plate pair; mounting shown nominally.",
+  "simplified": [
+    "rail and carriage envelopes",
+    "camera PCB and lens envelopes",
+    "tip screw heads"
+  ],
+  "omitted": [
+    "USB cable",
+    "straps",
+    "aperture markers",
+    "optional wrist tracker"
+  ],
+  "glb_units": "metres",
+  "count": {
+    "tips": 2,
+    "adapters": 2,
+    "brackets": 2,
+    "finger_holders": 2,
+    "pinion": 1,
+    "camera_mount": 1
+  }
+}

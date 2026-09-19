@@ -1,0 +1,26 @@
+{
+  "repository": "https://github.com/i2rt-robotics/i2rt",
+  "commit": "5b72c47239bd056d0fa6c1a39edeb0537c89443c",
+  "files": [
+    {
+      "path": "i2rt/robot_models/gripper/linear_4310/assets/tip_left.stl",
+      "url": "https://raw.githubusercontent.com/i2rt-robotics/i2rt/5b72c47239bd056d0fa6c1a39edeb0537c89443c/i2rt/robot_models/gripper/linear_4310/assets/tip_left.stl",
+      "sha256": "03d94f53d7b5e9e1871ea6f3925c68d7a2f894b08e0c575fa0b9ed4024684ff7"
+    },
+    {
+      "path": "i2rt/robot_models/gripper/linear_4310/assets/tip_right.stl",
+      "url": "https://raw.githubusercontent.com/i2rt-robotics/i2rt/5b72c47239bd056d0fa6c1a39edeb0537c89443c/i2rt/robot_models/gripper/linear_4310/assets/tip_right.stl",
+      "sha256": "8f620aae9c15e00e2ea4e5bf5e9a49e7edb2d23128b8955cfacc0da8da45c72f"
+    },
+    {
+      "path": "i2rt/robot_models/gripper/linear_4310/linear_4310.xml",
+      "url": "https://raw.githubusercontent.com/i2rt-robotics/i2rt/5b72c47239bd056d0fa6c1a39edeb0537c89443c/i2rt/robot_models/gripper/linear_4310/linear_4310.xml",
+      "sha256": "5efce6081df033204b5d9fb7fb4363c3a7680e21d907d20e0483abee17465ad9"
+    },
+    {
+      "path": "LICENSE",
+      "url": "https://raw.githubusercontent.com/i2rt-robotics/i2rt/5b72c47239bd056d0fa6c1a39edeb0537c89443c/LICENSE",
+      "sha256": "7cd0a0224a287ebd6c45703eb6623d264c7810f8958d65de8f99e87ccd9f4891"
+    }
+  ]
+}

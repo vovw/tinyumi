@@ -1,6 +1,10 @@
 # Bill of Materials
 
-Parts needed for **one** YAM-UMI gripper. Prices are the effective per-unit cost
+> Baseline upstream BOM. For tinyumi additions and per-joint hardware, see the
+> [fastener table](../docs/fasteners.md) and [current build](../README.md). Prices
+> below are historical.
+
+Parts needed for **one** tinyumi gripper. Prices are the effective per-unit cost
 from the linked listing (pack price ÷ pack quantity) and are reference estimates
 only — they move with shipping, region, and availability.
 
@@ -121,10 +125,10 @@ you go rather than working to a parts list.
 [HandUMI](https://github.com/murobotics-ai/handumi-hw) lists ~$110 per unit. The
 figures are not directly comparable: that total amortises pack purchases down to a
 per-piece cost — $0.07 of an M3 kit, $2.52 of a filament spool — where the list
-above moves those to Prerequisites instead. Counted the same way, YAM-UMI comes to
+above moves those to Prerequisites instead. Counted the same way, tinyumi comes to
 roughly **$81** against HandUMI's $110.
 
-The difference is structural rather than incidental. YAM-UMI drops the Feetech
+The difference is structural rather than incidental. tinyumi drops the Feetech
 servo ($13.89), its controller ($10.60) and power supply ($10.00) — about $34 —
 and adds two rails and carriages (~$20). It also assumes you already own the YAM
 gripper tips, which is reasonable for a rig that only fits a YAM, whereas HandUMI

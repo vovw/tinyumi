@@ -1,0 +1,44 @@
+{
+  "status": "fit_prototype",
+  "mount_valid": true,
+  "one_solid": true,
+  "watertight": true,
+  "plate_intersection_mm3": 0.0,
+  "camera_intersection_mm3": 0.0,
+  "base_hole_pitch_mm": 40.570796966552,
+  "camera_hole_pitch_mm": 20,
+  "pad_thickness_mm": 5,
+  "camera_screw": "M3x8 socket head, 3mm nominal insertion; maximum 4mm",
+  "base_screw": "2x M3x8 90-degree countersunk, 3mm nominal engagement",
+  "rear_camera_center_mm": [
+    0.0,
+    100.0,
+    0.0
+  ],
+  "view_direction": [
+    0.0,
+    -0.7071067811865476,
+    0.7071067811865476
+  ],
+  "print_bounds_mm": [
+    [
+      0.0,
+      0.0,
+      2.042810365310288e-14
+    ],
+    [
+      54.0,
+      86.0,
+      30.6568546295166
+    ]
+  ],
+  "camera_min_y_mm": 68.8873016277919,
+  "moving_assembly_max_y_mm": 35,
+  "camera_to_moving_y_gap_mm": 33.8873016277919,
+  "remaining_checks": [
+    "Real camera and USB plug clearance",
+    "Full-stroke hand/strap clearance",
+    "Print strength and screw fit",
+    "Camera extrinsics/intrinsics and marker visibility"
+  ]
+}

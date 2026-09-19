@@ -7,3 +7,11 @@ old_files/
 
 # Full-resolution originals kept locally, not published.
 media/originals/
+
+# Local explorations and superseded generated guides / print layouts.
+tmp/
+output/pdf/
+bambu/YAM_UMI_A1_PLA_ORIENTED.stl
+hardware/STL/plate_v6.3mf
+__pycache__/
+*.pyc

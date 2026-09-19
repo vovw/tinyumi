@@ -1,0 +1,43 @@
+{
+  "status": "concept_only_not_fit_verified",
+  "parameters_mm": {
+    "base_pitch": 40.57,
+    "base_width": 56.0,
+    "base_depth": 24.0,
+    "base_thickness": 6.0,
+    "screw_clearance": 3.4,
+    "reach": 62.0,
+    "saddle_rx": 19.0,
+    "saddle_ry": 17.0,
+    "wall": 4.0,
+    "saddle_bottom": 25.0,
+    "saddle_height": 48.0,
+    "strap_width": 10.0
+  },
+  "cad_valid": true,
+  "solid_count": 1,
+  "stl_watertight": true,
+  "volume_mm3": 37720.11943988293,
+  "bounds_mm": [
+    [
+      -28.0,
+      -12.0,
+      0.0
+    ],
+    [
+      28.0,
+      63.0,
+      73.0
+    ]
+  ],
+  "estimated_petg_mass_g_at_100pct_solid": 47.90455168865132,
+  "controller_envelope": "Illustrative; not measured Touch Plus geometry",
+  "unverified": [
+    "controller fit and tracking-emitter clearance",
+    "mount-to-plate interface and screw access",
+    "hand and full jaw sweep clearance",
+    "camera field of view",
+    "strength and deflection",
+    "pose accuracy"
+  ]
+}
