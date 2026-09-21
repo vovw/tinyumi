@@ -10,7 +10,9 @@ of the build.
 
 These additions are **fit prototypes**. CAD and mesh checks are recorded, but
 physical fit, strength, full hand/cable clearance and tracking performance are
-not yet established. End-to-end data collection is not implemented here. The
+not yet established. A [D405 tabletop collection pipeline](docs/data_collection.md)
+now provides calibration, recording, validation and original-UMI dataset export;
+physical tracking accuracy still requires validation on your assembled rig. The
 D405 has a new camera pose; it does not inherit the original fisheye calibration
 or the original camera-to-robot matching claim.
 

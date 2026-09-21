@@ -1,0 +1,8 @@
+{
+  "instructions": "Replace null entries with MEASURED millimetres. Marker axes: +x printed right, +y printed down, +z into marker. Offsets run from marker centre to inner contact-face centre. Forward is a unit vector in ID13 marker coordinates pointing from the palm toward the fingertip. Do not use guessed offsets.",
+  "contact_offsets_marker_mm": {
+    "13": [null, null, null],
+    "14": [null, null, null]
+  },
+  "tool_forward_marker13": [null, null, null]
+}

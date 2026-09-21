@@ -15,3 +15,7 @@ bambu/YAM_UMI_A1_PLA_ORIENTED.stl
 hardware/STL/plate_v6.3mf
 __pycache__/
 *.pyc
+.venv/
+.pytest_cache/
+data/
+*.egg-info/

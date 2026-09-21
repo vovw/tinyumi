@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling==1.27.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "tinyumi"
+version = "0.1.0"
+description = "D405 tabletop demonstration capture for tinyumi"
+requires-python = ">=3.10,<3.13"
+dependencies = [
+  "numpy==1.26.4", "opencv-contrib-python==4.10.0.84",
+  "scipy==1.14.1", "pyrealsense2==2.56.5.9235",
+]
+
+[project.optional-dependencies]
+export = ["zarr==2.18.3", "numcodecs==0.12.1"]
+test = ["pytest==8.3.5"]
+
+[project.scripts]
+tinyumi = "tinyumi.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/tinyumi"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

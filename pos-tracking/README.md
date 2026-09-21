@@ -1,5 +1,10 @@
 # Position tracking
 
+For the **D405-only marked-tabletop software**, use the
+[data collection guide](../docs/data_collection.md). It uses fixed workspace
+ArUco markers for wrist pose and IDs 13/14 for aperture. The fisheye/SLAM and
+external marker-ball approaches described below are separate hardware options.
+
 An alternative [HandUMI controller support adapted for tinyumi](quest_mount/handumi_v1/README.md)
 includes left/right CAD, a revised plate and an assembly preview. This is a fit
 prototype: real controller fit, hand clearance and tracking need physical checks.

@@ -1,0 +1,12 @@
+# Pass after --config-name=train_diffusion_unet_timm_umi_workspace via
+# the CLI overrides documented in docs/data_collection.md. This file is a
+# machine-readable override reference, not a replacement upstream task config.
+task:
+  dataset_frequeny: 30  # spelling is intentional: upstream key
+  obs_down_sample_steps: 1
+  camera_obs_latency: 0.0
+  robot_obs_latency: 0.0
+  gripper_obs_latency: 0.0
+  action_horizon: 16
+  img_obs_horizon: 2
+  low_dim_obs_horizon: 2
