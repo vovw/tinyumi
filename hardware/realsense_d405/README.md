@@ -51,10 +51,12 @@ or full-motion certification.
 
 ## Camera integration
 
-This is a mechanical change only. The D405 is a close-range stereo camera, not
-the original fisheye. Capture integration, camera calibration, marker visibility,
-and camera-to-gripper extrinsics need checking with the D405 before collecting
-usable data. Existing fisheye calibration must not be reused.
+The mount is a mechanical change; software is documented in the
+[D405 collection guide](../../docs/data_collection.md). It supports RGB/depth
+capture, fingertip ArUco aperture, fixed-board wrist tracking and UMI export.
+The D405 is a close-range stereo camera, not the original fisheye. Calibrate
+the camera-to-tool transform and aperture and verify marker visibility before
+collecting usable demonstrations. Existing fisheye calibration must not be reused.
 
 ## Dimensional source
 

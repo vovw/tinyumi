@@ -1,5 +1,16 @@
 # tinyumi changes
 
+## 2026-09-19 — D405 collection software
+
+- Added a locked Python package and CLI for camera diagnostics, printable
+  workspace/ChArUco boards, camera/gripper calibration, RGB/depth recording,
+  replay, quality validation and original-UMI Zarr export.
+- Added explicit RealSense inverse Brown–Conrady handling, bounded capture/write
+  queues and rejection of tracking gaps, dropped frames and incomplete episodes.
+- Added synthetic geometry/recording tests and an optional integration test
+  against pinned upstream UMI. Physical tag visibility and metric accuracy must
+  still be checked on the assembled rig; see `docs/data_collection.md`.
+
 ## 2026-09-19 — initial tinyumi fork
 
 Started from Yosub Shin’s YAM-UMI at `2862fe2`; merged upstream through
